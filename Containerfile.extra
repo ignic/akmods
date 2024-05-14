@@ -47,6 +47,7 @@ RUN if grep -qv "surface" <<< "${KERNEL_FLAVOR}"; then \
     /tmp/build-kmod-ryzen-smu.sh && \
     /tmp/build-kmod-vhba.sh && \
     /tmp/build-kmod-VirtualBox.sh && \
+    /tmp/build-kmod-xmm7360-pci.sh && \
     /tmp/build-kmod-zenergy.sh
 
 RUN for RPM in $(find /var/cache/akmods/ -type f -name \*.rpm); do \
