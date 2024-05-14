@@ -29,14 +29,14 @@ jobs:
           - ${{ inputs.fedora_version }}
         kernel_flavor:
           - main
-          - asus
-          - fsync
-          - fsync-lts
-          - surface
+          #- asus
+          #- fsync
+          #- fsync-lts
+          #- surface
         cfile_suffix:
-          - common
+          #- common
           - extra
-          - nvidia
+          #- nvidia
         exclude:
           - fedora_version: 40
             kernel_flavor: fsync-lts # kernel-ba packages are not being built for F40 yet.
